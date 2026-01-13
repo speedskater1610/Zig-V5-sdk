@@ -40,13 +40,3 @@ pub extern fn vexDeviceOpticalGestureDisable(device: V5_DeviceT) void;
 pub extern fn vexDeviceOpticalProximityThreshold(device: V5_DeviceT, value: i32) void;
 pub extern fn vexDeviceOpticalIntegrationTimeSet(device: V5_DeviceT, timeMs: f64) void;
 pub extern fn vexDeviceOpticalIntegrationTimeGet(device: V5_DeviceT) f64;
-
-// src/distance.zig
-const device = @import("device.zig");
-const V5_DeviceT = device.V5_DeviceT;
-
-pub extern fn vexDeviceDistanceDistanceGet(device: V5_DeviceT) u32;
-pub extern fn vexDeviceDistanceConfidenceGet(device: V5_DeviceT) u32;
-pub extern fn vexDeviceDistanceStatusGet(device: V5_DeviceT) u32;
-pub extern fn vexDeviceDistanceObjectSizeGet(device: V5_DeviceT) i32;
-pub extern fn vexDeviceDistanceObjectVelocityGet(device: V5_DeviceT) f64;
