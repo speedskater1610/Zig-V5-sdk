@@ -1,1 +1,1 @@
-pub const JUMP_TABLE_START: usize = 0x037fc000;
+pub const JUMP_TABLE_BASE: usize = 0x037fc000;
