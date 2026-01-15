@@ -1,1 +1,1 @@
-pub const JUMP_TABLE_BASE: usize = 0x037fc000;
+const JUMP_TABLE_BASE: *const u8 = @ptrFromInt(0x037FC000);
